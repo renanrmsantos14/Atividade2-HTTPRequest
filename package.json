@@ -1,0 +1,26 @@
+{
+  "name": "atividade2-httprequest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renanrmsantos14/Atividade2-HTTPRequest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/renanrmsantos14/Atividade2-HTTPRequest/issues"
+  },
+  "homepage": "https://github.com/renanrmsantos14/Atividade2-HTTPRequest#readme",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1"
+  }
+}
