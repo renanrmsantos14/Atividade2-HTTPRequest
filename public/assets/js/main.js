@@ -1,5 +1,6 @@
 const input = document.getElementById("search-input");
 const result = document.getElementById("result");
+const btn = document.getElementById('searchBtn');
 
 function showResult(message, type) {
   result.innerHTML = message; // textContent → innerHTML
@@ -48,4 +49,28 @@ input.addEventListener("input", function () {
     result.innerHTML = "";
     result.className = "result";
   }
+});
+
+
+btn.addEventListener("click", handleCepSearch);
+
+
+
+/* efeito magnético + ring de clique */
+
+
+btn.addEventListener('mousemove', e => {
+  const r = btn.getBoundingClientRect();
+  const dx = (e.clientX - (r.left + r.width/2))  / (r.width/2);
+  const dy = (e.clientY - (r.top  + r.height/2)) / (r.height/2);
+  btn.style.transform = `rotateY(${dx*14}deg) rotateX(${-dy*14}deg)`;
+});
+btn.addEventListener('mouseleave', () => {
+  btn.style.transform = 'rotateY(0deg) rotateX(0deg)';
+});
+btn.addEventListener('click', () => {
+  btn.classList.remove('clicked');
+  void btn.offsetWidth;          // força reflow para resetar animação
+  btn.classList.add('clicked');
+  setTimeout(() => btn.classList.remove('clicked'), 600);
 });

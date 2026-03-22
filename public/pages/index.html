@@ -1,18 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="https://www.cps.sp.gov.br/favicon.ico"/>
-    <link rel="stylesheet" href="./assets/css/main.css"/> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="https://www.cps.sp.gov.br/favicon.ico" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DSM | CEP</title>
-</head>
-<body>
+  </head>
+  <body>
     <main class="card">
-        <h1 class="title">Consulta CEPs do Brasil</h1>
-        <input id="search-input" type="text" placeholder="Digite um CEP"/>  
-        <section id="result" class="result"></section>  
+      <h1 class="title">Consulta CEPs do Brasil</h1>
+      <input id="search-input" type="text" placeholder="Digite um CEP" />
+      <section id="result" class="result"></section>
+      <!-- HTML esperado -->
+      <button class="search-button" id="searchBtn">
+        <span class="search-button-inner">
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.35-4.35" />
+          </svg>
+          Buscar
+        </span>
+      </button>
     </main>
-    <script src="./assets/js/main.js"></script>    
-</body>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
