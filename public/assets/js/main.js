@@ -35,6 +35,8 @@ async function handleCepSearch() {
   }
 }
 
+// teste de mudança
+
 input.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
     handleCepSearch();
